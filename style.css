@@ -1,16 +1,149 @@
-body{padding: 0%;margin: 0%;background-color: aliceblue;}
-*::selection{background-color: transparent;}
-h1::selection{color: rgb(58, 58, 56);}
-p::selection{color: red;}
-span::selection{color: rgb(150, 73, 223);}
-span{color: rgb(58, 58, 56);font-size: 60px;}
-.image{position: absolute;top: 15%;left: 65%;}
-.wrapper{top: 35%;position: relative;padding-left: 40px;}
-h1{font-family: cursive;font-size: 50px;color: rgb(209, 54, 54);}
-.par{position: absolute;top: 45%;padding-right: 35%;}
-p{padding-left: 5%;font-size: 20px;font-family: monospace;font-weight: bolder;letter-spacing: .2rem;line-height: 30px;}
-@media screen and (max-width:1110px){.image{position: absolute;left: 30%;top: 0%;}.wrapper{top: 55%;position: relative;padding-left: 10px;}span{font-size: 50px;}h1{font-family: cursive;font-size: 50px;color: rgb(209, 54, 54);}.par{position: absolute;top: 65%;padding-right: 0%;}p{padding-left: 4%;font-size: 20px;font-family: monospace;font-weight: bolder;letter-spacing: .2rem;line-height: 30px;}}
-@media screen and (max-width:560px){.image{position: absolute;left: 0%;}}
-@media screen and (max-width:560px){h1{font-size: 40px;}.image{height: 10px;width: 10px;;}}
-git remote add origin https://github.com/coder-Aayush/portfolio.git
-git push -u origin master
+#header{
+	background-image: linear-gradient(80deg,#00ff00,#fff);
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+h5{
+	padding-top: 2%;
+	text-align: center;
+	font-size: 60px;
+	padding-bottom: 1%;
+	font-family: 'Ranga', cursive;
+}
+p{
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	font-style: italic;
+	font-family: 'Rubik', sans-serif;
+}
+.btn-header{
+	text-align: center;
+    padding: 5px 15px;
+    border: 3px solid #000;
+    background-color: transparent;
+    border-radius: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.btn-header:hover{
+	color: #fff;
+	background-color: #000;
+	transition: .9s all;
+}
+.overlay{
+	position: absolute;
+	height: auto;
+	text-align: center;
+	align-items: center;
+	align-content: flex-start;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	opacity: 0;
+	background-color: rgba(20,50,0,0.9);
+	color: #fff;
+	padding-top: 15%;
+}
+.card:hover .overlay{
+	opacity: 1;
+	transition: .9s all;
+}
+.card-project{
+	padding-bottom: 2%;
+	border: none;
+}
+.btn-priview{
+	border: 2px solid #fbfbfb;
+    font-size: 20px;
+    background: transparent;
+    color: #fff;
+    font-weight: bolder;
+    padding: 2px 10px;
+}
+.btn-priview:hover{
+	border: 2px solid #fff;
+	background: #fff;
+	color: #000;
+	transition: .5s all;
+}
+h4{
+	font-family: 'Hammersmith One', sans-serif;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	font-size: 40px;
+	font-weight: bolder;
+}
+h2{
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: 40px;
+}
+.img-skill{
+	height: auto;
+	width: 125px;
+}
+.img-project{
+	height: 200px;
+}
+user-select: .img-project{
+	color: transparent;
+}
+#about{
+	background-color: #deebde;
+	width: 100%;
+	height: auto;
+	padding-top: 25px;
+	padding-bottom: 10px;
+}
+.about-me{
+	font-size: 25px;
+	line-height: 45px;
+	font-weight: 0;
+	font-family: 'Merienda One', cursive;
+	padding-top: 5%;
+}
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin:5px 20px;
+    float:left;
+}
+
+.wp-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.fa-github {
+  background: #4c4d4e;
+}
+
+.fa-linkedin {
+  background: #0077B5;
+}
+
+.fa-twitter {
+  background: #1DA1F2;
+}
+.fa-instagram {
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+img::selection{
+	background-color: transparent;
+}
+p::selection{
+	background-color: rgba(0,0,10,0.5);
+}
