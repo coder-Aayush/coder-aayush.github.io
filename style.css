@@ -147,3 +147,9 @@ img::selection{
 p::selection{
 	background-color: rgba(0,0,10,0.5);
 }
+.pre{
+	font-size: 20px;
+}
+.rotateInUpRight {
+  animation-delay: 1s;
+}
