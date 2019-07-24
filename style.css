@@ -145,11 +145,19 @@ img::selection{
 	background-color: transparent;
 }
 p::selection{
-	background-color: rgba(0,0,10,0.5);
+	background-color: #25CCF7;
 }
 .pre{
-	font-size: 20px;
+	font-size: 18px;
 }
 .rotateInUpRight {
   animation-delay: 1s;
+}
+.image {
+    border-radius: 50%;
+    border: 9px solid #fff;
+    height: 310px;
+}
+.img{
+padding-left: 90px;
 }
