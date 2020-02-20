@@ -36,7 +36,7 @@ header nav {
 header nav {
   padding: 10px;
   position: fixed;
-  z-index: 999999999999999999999;
+  z-index: 5;
 }
 header nav ul li {
   list-style: none;
@@ -87,7 +87,7 @@ header nav ul li a:hover {
   padding-left: 1em;
   width: 40%;
   opacity: 10000;
-  z-index: 99999999999999999999;
+  z-index: 4;
   left: 0;
   height: 100vh;
 }
