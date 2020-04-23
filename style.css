@@ -16,8 +16,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* navbar */
 header {
-  background: linear-gradient(57deg, #cc2b5ea4, #743a889f),
-    url(./img/aayush.png);
+  background: linear-gradient(57deg, #cc2b5ea4, #743a889f);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
