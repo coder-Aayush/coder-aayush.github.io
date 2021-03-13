@@ -14,7 +14,7 @@ class _LayoutState extends State<Layout> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _controller = TabController(length: 4, vsync: this);
+    _controller = TabController(length: _screenList.length, vsync: this);
   }
 
   @override
@@ -22,6 +22,13 @@ class _LayoutState extends State<Layout> with SingleTickerProviderStateMixin {
     _controller?.dispose();
     super.dispose();
   }
+
+  List<Widget> _screenList = [
+    HomeView(),
+    Center(child: Text('About')),
+    Center(child: Text('Blog')),
+    Center(child: Text('Projects')),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -42,13 +49,7 @@ class _LayoutState extends State<Layout> with SingleTickerProviderStateMixin {
               physics: NeverScrollableScrollPhysics(),
               controller: _controller,
               children: [
-                HomeView(),
-                Center(child: Text('about')),
-                Center(child: Text('blog')),
-                Center(child: Text('project')),
-                // AboutView(),
-                // BlogView(),
-                // ProjectsView(),
+                ..._screenList,
               ],
             ),
           ),
