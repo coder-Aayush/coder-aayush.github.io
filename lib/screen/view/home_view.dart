@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -11,6 +13,9 @@ class HomeView extends StatelessWidget {
         children: [
           CircleAvatar(
             maxRadius: 70,
+            backgroundImage: AssetImage(
+              'assets/images/my_dash_avatar_aayush.png',
+            ),
           ),
           SizedBox(height: 2),
           Text(
@@ -30,7 +35,8 @@ class HomeView extends StatelessWidget {
                 ),
           ),
           SizedBox(height: 8),
-          /// TODO: Change in design
+
+          /// TODO: Add 2 button [Hire Me] and [Download Resume]
           Center(
             child: OutlinedButton(
               child: Text('Download Resume'),

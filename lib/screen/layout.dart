@@ -1,4 +1,7 @@
+import 'package:coderaayush/screen/view/about_view.dart';
+import 'package:coderaayush/screen/view/blog_view.dart';
 import 'package:coderaayush/screen/view/home_view.dart';
+import 'package:coderaayush/screen/view/project_view.dart';
 import 'package:coderaayush/widgets/CustomBottomNavigationBar.dart';
 import 'package:flutter/material.dart';
 import 'package:coderaayush/widgets/nav_bar.dart';
@@ -14,7 +17,10 @@ class _LayoutState extends State<Layout> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _controller = TabController(length: _screenList.length, vsync: this);
+    _controller = TabController(
+      length: _screenList.length,
+      vsync: this,
+    );
   }
 
   @override
@@ -25,9 +31,9 @@ class _LayoutState extends State<Layout> with SingleTickerProviderStateMixin {
 
   List<Widget> _screenList = [
     HomeView(),
-    Center(child: Text('About')),
-    Center(child: Text('Blog')),
-    Center(child: Text('Projects')),
+    AboutView(),
+    BlogView(),
+    ProjectView(),
   ];
 
   @override
