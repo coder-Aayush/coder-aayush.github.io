@@ -43,10 +43,9 @@ class _LayoutState extends State<Layout> with SingleTickerProviderStateMixin {
               controller: _controller,
               children: [
                 HomeView(),
-                Text('about'),
-                Text('blog'),
-                Text('project'),
-                // HomeView(),
+                Center(child: Text('about')),
+                Center(child: Text('blog')),
+                Center(child: Text('project')),
                 // AboutView(),
                 // BlogView(),
                 // ProjectsView(),

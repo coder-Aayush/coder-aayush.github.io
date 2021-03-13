@@ -7,7 +7,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      /// save value in global state and check for current 
+      /// save value in global state and check for current
       /// value and chnage the selected color
       /// [selectedItemColor]: , /// check here the condition
       onTap: (s) {
@@ -30,7 +30,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
         ),
         BottomNavigationBarItem(
           icon: Container(),
-          label: 'Contact',
+          label: 'Projects',
         ),
       ],
     );
