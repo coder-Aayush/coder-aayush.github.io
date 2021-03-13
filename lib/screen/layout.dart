@@ -1,3 +1,4 @@
+import 'package:coderaayush/widgets/CustomBottomNavigationBar.dart';
 import 'package:coderaayush/widgets/nav_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,9 @@ class _LayoutState extends State<Layout> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
     return Scaffold(
+      bottomNavigationBar: width < 600 ? CustomBottomNavigationBar(controller: _controller) : null,
       body: Column(
         children: [
           NavBar(

@@ -15,13 +15,18 @@ class _HomePageState extends State<HomePage>
     _controller = TabController(length: 4, vsync: this);
   }
 
+  @override
+  void dispose() {
+    _controller?.dispose();
+    super.dispose();
+  }
+
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
       bottomNavigationBar: width < 600 ? CustomBottomNavigationBar() : null,
       body: Column(
         children: <Widget>[
-          
           Flexible(
             child: Align(
               alignment: Alignment.center,
@@ -80,8 +85,6 @@ class _HomePageState extends State<HomePage>
     );
   }
 }
-
-
 
 class NavBar extends StatelessWidget {
   final TabController? controller;

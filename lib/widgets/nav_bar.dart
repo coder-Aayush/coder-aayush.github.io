@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 
 class NavBar extends StatelessWidget {
   final TabController? controller;
@@ -40,29 +41,28 @@ class _Nav extends StatelessWidget {
             FlutterLogo(),
             Row(
               children: [
+                TextButton(onPressed: () => _jumpIndex(0), child: Text('Home')),
                 TextButton(
-                    onPressed: () => controller?.animateTo(0),
-                    child: Text('Home')),
+                    onPressed: () => _jumpIndex(1), child: Text('About')),
+                TextButton(onPressed: () => _jumpIndex(2), child: Text('Blog')),
                 TextButton(
-                    onPressed: () => controller?.animateTo(1),
-                    child: Text('About')),
-                TextButton(
-                    onPressed: () => controller?.animateTo(2),
-                    child: Text('Blog')),
-                TextButton(
-                    onPressed: () => controller?.animateTo(3),
-                    child: Text('Project')),
+                    onPressed: () => _jumpIndex(3), child: Text('Project')),
               ],
             ),
             Row(
               children: [
-                IconButton(icon: Icon(Icons.fact_check), onPressed: () {}),
-                IconButton(icon: Icon(Icons.fact_check), onPressed: () {}),
+                IconButton(icon: Icon(LineIcons.facebook), onPressed: () {}),
+                IconButton(icon: Icon(LineIcons.github), onPressed: () {}),
+                IconButton(icon: Icon(LineIcons.linkedin), onPressed: () {}),
               ],
             ),
           ],
         ),
       ),
     );
+  }
+
+  void _jumpIndex(int index) {
+    controller?.animateTo(index);
   }
 }
