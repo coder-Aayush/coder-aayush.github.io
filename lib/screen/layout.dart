@@ -5,6 +5,9 @@ import 'package:coderaayush/screen/view/project_view.dart';
 import 'package:coderaayush/widgets/CustomBottomNavigationBar.dart';
 import 'package:flutter/material.dart';
 import 'package:coderaayush/widgets/nav_bar.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
+import 'dart:html' as html;
+
 
 class Layout extends StatefulWidget {
   @override
@@ -38,6 +41,11 @@ class _LayoutState extends State<Layout> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
+    /// check [pathname] and [controller.animateTo(page)]
+    /// also [platform check]
+    // print(html.window.location.pathname?.contains('home'));
+    /// also add [meta tags] using native js code
+    // print(html.document.querySelector('head').appendHtml(''));
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
       bottomNavigationBar: width < 600
