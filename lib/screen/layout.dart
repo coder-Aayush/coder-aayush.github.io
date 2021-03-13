@@ -1,6 +1,7 @@
+import 'package:coderaayush/screen/view/home_view.dart';
 import 'package:coderaayush/widgets/CustomBottomNavigationBar.dart';
-import 'package:coderaayush/widgets/nav_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:coderaayush/widgets/nav_bar.dart';
 
 class Layout extends StatefulWidget {
   @override
@@ -26,7 +27,9 @@ class _LayoutState extends State<Layout> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
-      bottomNavigationBar: width < 600 ? CustomBottomNavigationBar(controller: _controller) : null,
+      bottomNavigationBar: width < 600
+          ? CustomBottomNavigationBar(controller: _controller)
+          : null,
       body: Column(
         children: [
           NavBar(
@@ -36,18 +39,19 @@ class _LayoutState extends State<Layout> with SingleTickerProviderStateMixin {
           /// Wrap with [Flexiable]
           Flexible(
             child: TabBarView(
-                physics: NeverScrollableScrollPhysics(),
-                controller: _controller,
-                children: [
-                  Center(child: Text('home')),
-                  Text('about'),
-                  Text('blog'),
-                  Text('project'),
-                  // HomeView(),
-                  // AboutView(),
-                  // BlogView(),
-                  // ProjectsView(),
-                ]),
+              physics: NeverScrollableScrollPhysics(),
+              controller: _controller,
+              children: [
+                HomeView(),
+                Text('about'),
+                Text('blog'),
+                Text('project'),
+                // HomeView(),
+                // AboutView(),
+                // BlogView(),
+                // ProjectsView(),
+              ],
+            ),
           ),
         ],
       ),
