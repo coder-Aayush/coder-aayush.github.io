@@ -8,7 +8,6 @@ import 'package:coderaayush/widgets/nav_bar.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'dart:html' as html;
 
-
 class Layout extends StatefulWidget {
   @override
   _LayoutState createState() => _LayoutState();

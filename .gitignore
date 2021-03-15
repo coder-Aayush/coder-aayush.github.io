@@ -39,3 +39,7 @@ app.*.symbols
 
 # Obfuscation related
 app.*.map.json
+
+
+# ignore bug files [flutter create bug]
+bug/
