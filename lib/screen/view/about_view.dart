@@ -1,4 +1,4 @@
-import 'package:coderaayush/widgets/title_view.dart';
+import 'package:coderaayush/widgets/title_header.dart';
 import 'package:flutter/material.dart';
 
 class AboutView extends StatelessWidget {
