@@ -1,12 +1,9 @@
-import 'package:coderaayush/helpers/flutter_hamlet.dart';
 import 'package:flutter/material.dart';
-import 'dart:js' as js;
 
 class AboutView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 // This will add meta tags in head when the build context is triggered
-    Flutterhamlet.metaTags(['hey', 'ok']);
     final width = MediaQuery.of(context).size.width;
     return SingleChildScrollView(
       child: Padding(
@@ -40,7 +37,7 @@ class AboutView extends StatelessWidget {
                 Text(
                     'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'),
                 SizedBox(height: 14),
-                OutlinedButton(onPressed: () {}, child: Text('Get Width')),
+                ElevatedButton(onPressed: () {}, child: Text('Get Width')),
               ],
             ),
           ),
