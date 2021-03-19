@@ -4,9 +4,12 @@ class BlogView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text(
-        'Comming Soon.',
-        style: Theme.of(context).textTheme.headline4,
+      child: ConstrainedBox(
+        constraints: BoxConstraints(maxWidth: 1080),
+        child: Text(
+          'Coming Soon',
+          style: Theme.of(context).textTheme.headline4,
+        ),
       ),
     );
   }
