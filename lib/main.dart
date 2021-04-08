@@ -1,11 +1,11 @@
 import 'package:coderaayush/screen/layout.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+import 'package:url_strategy/url_strategy.dart';
+
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  setUrlStrategy(PathUrlStrategy());
+  setPathUrlStrategy();
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
