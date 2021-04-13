@@ -5,6 +5,7 @@ import 'package:coderaayush/screen/view/project_view.dart';
 import 'package:coderaayush/widgets/CustomBottomNavigationBar.dart';
 import 'package:flutter/material.dart';
 import 'package:coderaayush/widgets/nav_bar.dart';
+import 'package:nil/nil.dart';
 
 class Layout extends StatefulWidget {
   @override
@@ -47,7 +48,7 @@ class _LayoutState extends State<Layout> with SingleTickerProviderStateMixin {
     return Scaffold(
       bottomNavigationBar: width < 600
           ? CustomBottomNavigationBar(controller: _controller)
-          : null,
+          : nil,
       body: Column(
         children: [
           NavBar(

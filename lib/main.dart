@@ -11,7 +11,6 @@ void main() {
       debugShowCheckedModeBanner: false,
       title: 'Aayush Bhattarai',
       home: MyApp(),
-      themeMode: ThemeMode.dark,
       theme: ThemeData(
         fontFamily: GoogleFonts.poppins().fontFamily,
       ),
