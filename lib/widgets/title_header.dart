@@ -8,7 +8,7 @@ class TitleHeader extends StatelessWidget {
       alignment: Alignment.topLeft,
       child: Text(
         header!,
-        style: TextStyle(
+        style: const TextStyle(
           fontWeight: FontWeight.w600,
           fontSize: 24,
         ),

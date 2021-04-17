@@ -5,7 +5,7 @@ class BlogView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: ConstrainedBox(
-        constraints: BoxConstraints(maxWidth: 1080),
+        constraints: const BoxConstraints(maxWidth: 1080),
         child: Text(
           'Coming Soon',
           style: Theme.of(context).textTheme.headline4,

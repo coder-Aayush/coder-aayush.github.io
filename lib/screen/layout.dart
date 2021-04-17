@@ -2,7 +2,7 @@ import 'package:coderaayush/screen/view/about_view.dart';
 import 'package:coderaayush/screen/view/blog_view.dart';
 import 'package:coderaayush/screen/view/home_view.dart';
 import 'package:coderaayush/screen/view/project_view.dart';
-import 'package:coderaayush/widgets/CustomBottomNavigationBar.dart';
+import 'package:coderaayush/widgets/custom_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:coderaayush/widgets/nav_bar.dart';
 import 'package:nil/nil.dart';
@@ -30,7 +30,7 @@ class _LayoutState extends State<Layout> with SingleTickerProviderStateMixin {
     super.dispose();
   }
 
-  List<Widget> _screenList = [
+  final List<Widget> _screenList = [
     HomeView(),
     AboutView(),
     BlogView(),
@@ -58,7 +58,7 @@ class _LayoutState extends State<Layout> with SingleTickerProviderStateMixin {
           /// Wrap with [Flexiable]
           Flexible(
             child: TabBarView(
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               controller: _controller,
               children: [
                 ..._screenList,

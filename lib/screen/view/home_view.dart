@@ -6,18 +6,20 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Align(
+      // ignore: avoid_redundant_argument_values
       alignment: Alignment.center,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        // ignore: avoid_redundant_argument_values
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          CircleAvatar(
+         const  CircleAvatar(
             maxRadius: 70,
             backgroundImage: AssetImage(
               'assets/images/my_dash_avatar_aayush.png',
             ),
           ),
-          SizedBox(height: 2),
+         const  SizedBox(height: 2),
           Text(
             'Aayush Bhattarai',
             textAlign: TextAlign.center,
@@ -34,13 +36,13 @@ class HomeView extends StatelessWidget {
                   fontSize: 16,
                 ),
           ),
-          SizedBox(height: 8),
+         const  SizedBox(height: 8),
 
           /// TODO: Add 2 button [Hire Me] and [Download Resume]
           Center(
             child: OutlinedButton(
-              child: Text('Download Resume'),
               onPressed: () {},
+              child: const Text('Download Resume'),
             ),
           )
         ],

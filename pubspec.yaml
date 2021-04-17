@@ -9,15 +9,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.0
   google_fonts: ^2.0.0
   line_icons: ^2.0.1
   nil: ^1.1.1
   url_strategy: ^0.2.0
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  lint: ^1.5.3
 
 flutter:
   uses-material-design: true

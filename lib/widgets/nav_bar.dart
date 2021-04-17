@@ -28,32 +28,32 @@ class _Nav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ConstrainedBox(
-      constraints: BoxConstraints(
+      constraints: const BoxConstraints(
         maxWidth: 1080,
       ),
       child: Container(
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
           horizontal: 16,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            FlutterLogo(),
+            const FlutterLogo(),
             Row(
               children: [
-                TextButton(onPressed: () => _jumpIndex(0), child: Text('Home')),
+                TextButton(onPressed: () => _jumpIndex(0), child: const Text('Home')),
                 TextButton(
-                    onPressed: () => _jumpIndex(1), child: Text('About')),
-                TextButton(onPressed: () => _jumpIndex(2), child: Text('Blog')),
+                    onPressed: () => _jumpIndex(1), child: const Text('About')),
+                TextButton(onPressed: () => _jumpIndex(2), child: const Text('Blog')),
                 TextButton(
-                    onPressed: () => _jumpIndex(3), child: Text('Project')),
+                    onPressed: () => _jumpIndex(3), child: const Text('Project')),
               ],
             ),
             Row(
               children: [
-                IconButton(icon: Icon(LineIcons.facebook), onPressed: () {}),
-                IconButton(icon: Icon(LineIcons.github), onPressed: () {}),
-                IconButton(icon: Icon(LineIcons.linkedin), onPressed: () {}),
+                IconButton(icon: const Icon(LineIcons.facebook), onPressed: () {}),
+                IconButton(icon: const Icon(LineIcons.github), onPressed: () {}),
+                IconButton(icon: const Icon(LineIcons.linkedin), onPressed: () {}),
               ],
             ),
           ],

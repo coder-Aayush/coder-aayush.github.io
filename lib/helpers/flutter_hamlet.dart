@@ -2,9 +2,9 @@
 import 'dart:html' as html;
 
 class Flutterhamlet {
-  static metaTags(String tags) {
+  static void metaTags(String tags) {
     // TODO: Refactor code
-    html.Element? htmlVal = html.document.querySelector('head');
+    final html.Element? htmlVal = html.document.querySelector('head');
     htmlVal?.setInnerHtml(
       tags,
       validator: AllowAll(),

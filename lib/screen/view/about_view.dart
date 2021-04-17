@@ -16,27 +16,27 @@ class AboutView extends StatelessWidget {
             constraints: const BoxConstraints(maxWidth: 780),
             child: Column(
               children: [
-                SizedBox(height: 20),
-                TitleHeader(header: 'About Me'),
-                SizedBox(height: 2),
-                Align(
+                const SizedBox(height: 20),
+                const TitleHeader(header: 'About Me'),
+                const SizedBox(height: 2),
+                const Align(
                   alignment: Alignment.topLeft,
                   child: SelectableText(
                     'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s. ',
                   ),
                 ),
-                SizedBox(height: 14),
-                Text(
+                const SizedBox(height: 14),
+                const Text(
                   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
                 ),
-                SizedBox(height: 14),
-                ElevatedButton(onPressed: () {}, child: Text('Hire Me')),
-                SizedBox(height: 24),
-                TitleHeader(header: 'Skills'),
-                SizedBox(height: 10),
+                const SizedBox(height: 14),
+                ElevatedButton(onPressed: () {}, child: const Text('Hire Me')),
+                const SizedBox(height: 24),
+                const TitleHeader(header: 'Skills'),
+                const SizedBox(height: 10),
                 // TODO: Add circular Progress indicator for representation of skills
                 // TODO: Migrate the package to sound null safety
-                TitleHeader(header: 'Journey'),
+                const TitleHeader(header: 'Journey'),
                 // TODO: Add the full timeline of my journey
               ],
             ),

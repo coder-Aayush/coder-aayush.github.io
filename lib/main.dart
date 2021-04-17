@@ -12,6 +12,7 @@ void main() {
       title: 'Aayush Bhattarai',
       home: MyApp(),
       theme: ThemeData(
+        brightness: Brightness.dark,
         fontFamily: GoogleFonts.poppins().fontFamily,
       ),
     ),
