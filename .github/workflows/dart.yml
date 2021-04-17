@@ -1,10 +1,9 @@
-name: Web
+name: Generate Web
 
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    branches:
+    - master
 
 jobs:
   build:
@@ -20,5 +19,5 @@ jobs:
       - run: git config user.name coder-Aayush
       - run: git config user.email bhattaraiaayush08@gmail.com
       - run: git --work-tree build/web add --all
-      - run: git commit -m "${{Pushed to Web branch - github.event.head_commit.message }}"
+      - run: git commit -m "Build Web"
       - run: git push origin HEAD:web --force
