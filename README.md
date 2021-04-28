@@ -1,16 +1,18 @@
-# coderaayush
+<p align="center">
+        <img src="https://raw.githubusercontent.com/coder-Aayush/coder-aayush.github.io/master/assets/images/my_dash_avatar_aayush.png" align="center" alt="Aayush"/>
+</p>
+<h1 align="center" style="border: 0;"> Coder Aayush Portfolio </h1>
 
-A new Flutter project.
+### Contributors
 
-## Getting Started
+List of all Contributors:
+- [Aayush Bhattarai](https://github.com/coder-Aayush)
 
-This project is a starting point for a Flutter application.
+## Contribution
 
-A few resources to get you started if this is your first Flutter project:
+This project is to help you easily scan you documents via camera or the images and process them into a pdf file. If you want to contribute, pull requests are always welcome.Pull request to add features rules.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Fork](https://github.com/coder-Aayush/coder-aayush.github.io/fork) the project
+- Make a `feature-branch` from `master` and add your features
+- Run  `flutter analyze .` 
+- Send pull request to `master` and wait to merge. 
