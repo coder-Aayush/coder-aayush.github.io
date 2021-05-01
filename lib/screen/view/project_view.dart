@@ -50,3 +50,4 @@ class BlogCard extends StatelessWidget {
     );
   }
 }
+ 
